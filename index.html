@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Searchlight NV AI Lead Routing System - Automate your lead flow with intelligent AI. Get more client opportunities without ads.">
+    <meta name="keywords" content="AI Lead Routing, Lead Generation, Local Business, Automation">
+    <meta name="author" content="Searchlight NV">
+    <meta property="og:title" content="Searchlight NV AI Lead Routing System For Growth">
+    <meta property="og:description" content="Automate Searchlight's Lead Flow With AI. More client opportunities without ads.">
+    <meta property="og:type" content="website">
+    <title>Searchlight NV AI Lead Routing System For Growth</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        body {
+            background-color: #0f0f1e;
+            color: #ffffff;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #5B4BFF 0%, #00E5A8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .primary-gradient {
+            background: linear-gradient(135deg, #5B4BFF 0%, #7c69ff 100%);
+        }
+        
+        .accent-gradient {
+            background: linear-gradient(135deg, #00E5A8 0%, #00d494 100%);
+        }
+        
+        .card-hover {
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .card-hover:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 50px rgba(91, 75, 255, 0.15);
+        }
+        
+        .btn-primary {
+            background-color: #5B4BFF;
+            color: white;
+            border-radius: 9999px;
+            padding: 12px 32px;
+            font-weight: 600;
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+            display: inline-block;
+            text-decoration: none;
+            cursor: pointer;
+            border: none;
+        }
+        
+        .btn-primary:hover {
+            filter: brightness(1.1);
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(91, 75, 255, 0.3);
+        }
+        
+        .btn-secondary {
+            background-color: transparent;
+            color: #5B4BFF;
+            border: 2px solid #5B4BFF;
+            border-radius: 9999px;
+            padding: 12px 32px;
+            font-weight: 600;
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+            display: inline-block;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        
+        .btn-secondary:hover {
+            background-color: #5B4BFF;
+            color: white;
+            transform: scale(1.05);
+        }
+        
+        .feature-card {
+            background: linear-gradient(135deg, rgba(91, 75, 255, 0.1) 0%, rgba(0, 229, 168, 0.05) 100%);
+            border: 1px solid rgba(91, 75, 255, 0.2);
+            border-radius: 16px;
+            padding: 32px;
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(91, 75, 255, 0.4);
+            box-shadow: 0 20px 50px rgba(91, 75, 255, 0.15);
+        }
+        
+        .testimonial-card {
+            background: linear-gradient(135deg, rgba(91, 75, 255, 0.08) 0%, rgba(0, 229, 168, 0.03) 100%);
+            border: 1px solid rgba(91, 75, 255, 0.15);
+            border-radius: 16px;
+            padding: 32px;
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 15px 40px rgba(91, 75, 255, 0.1);
+            border-color: rgba(91, 75, 255, 0.25);
+        }
+        
+        .faq-item {
+            background: linear-gradient(135deg, rgba(91, 75, 255, 0.08) 0%, rgba(0, 229, 168, 0.03) 100%);
+            border: 1px solid rgba(91, 75, 255, 0.15);
+            border-radius: 12px;
+            margin-bottom: 16px;
+            overflow: hidden;
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .faq-item:hover {
+            border-color: rgba(91, 75, 255, 0.3);
+        }
+        
+        .faq-question {
+            padding: 24px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+            user-select: none;
+        }
+        
+        .faq-question:hover {
+            background-color: rgba(91, 75, 255, 0.05);
+        }
+        
+        .faq-icon {
+            transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+            color: #5B4BFF;
+        }
+        
+        .faq-answer {
+            padding: 0 24px 24px 24px;
+            color: #d1d5db;
+            line-height: 1.6;
+            animation: slideDown 300ms ease-out;
+        }
+        
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .star-rating {
+            color: #00E5A8;
+        }
+        
+        header {
+            background-color: rgba(15, 15, 30, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(91, 75, 255, 0.1);
+        }
+        
+        header.sticky {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, #0f0f1e 0%, rgba(91, 75, 255, 0.05) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(91, 75, 255, 0.15) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+        
+        .hero-section::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            left: -5%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(0, 229, 168, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+        
+        .cta-section {
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(15, 15, 30, 0.8) 0%, rgba(91, 75, 255, 0.2) 100%);
+            z-index: 1;
+        }
+        
+        .cta-section > * {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .section-title {
+            font-size: 2.25rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 16px;
+        }
+        
+        .section-subtitle {
+            font-size: 1.125rem;
+            color: #9ca3af;
+            line-height: 1.6;
+        }
+        
+        .mobile-menu {
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .mobile-menu.hidden {
+            display: none;
+        }
+        
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 1.875rem;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-950 text-white">
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-gray-950/95 backdrop-blur-md border-b border-indigo-500/10">
+        <nav class="max-w-7xl mx-auto px-6 md:px-12 py-6 flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-gradient-to-br from-indigo-500 to-green-400 rounded-lg flex items-center justify-center">
+                    <i class="fas fa-rocket text-white font-bold text-lg"></i>
+                </div>
+                <span class="text-xl font-bold text-white">Searchlight</span>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#features" class="text-gray-300 hover:text-indigo-400 transition-colors duration-300 font-medium">Features</a>
+                <a href="#benefits" class="text-gray-300 hover:text-indigo-400 transition-colors duration-300 font-medium">Benefits</a>
+                <a href="#testimonials" class="text-gray-300 hover:text-indigo-400 transition-colors duration-300 font-medium">Testimonials</a>
+                <a href="#faq" class="text-gray-300 hover:text-indigo-400 transition-colors duration-300 font-medium">FAQ</a>
+            </div>
+
+            <!-- CTA Button Desktop -->
+            <div class="hidden md:block">
+                <a href="https://dandowneyseo.com" target="_blank" class="btn-primary">Get Started</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-button md:hidden text-white text-2xl focus:outline-none focus:ring-2 focus:ring-indigo-500 rounded-lg p-2">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden md:hidden bg-gray-900/95 border-t border-indigo-500/10">
+            <div class="px-6 py-4 space-y-4">
+                <a href="#features" class="block text-gray-300 hover:text-indigo-400 transition-colors duration-300 font-medium py-2">Features</a>
+                <a href="#benefits" class="block text-gray-300 hover:text-indigo-400 transition-colors duration-300 font-medium py-2">Benefits</a>
+                <a href="#testimonials" class="block text-gray-300 hover:text-indigo-400 transition-colors duration-300 font-medium py-2">Testimonials</a>
+                <a href="#faq" class="block text-gray-300 hover:text-indigo-400 transition-colors duration-300 font-medium py-2">FAQ</a>
+                <a href="https://dandowneyseo.com" target="_blank" class="btn-primary block text-center mt-4">Get Started</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section py-32 md:py-40 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
+            <div class="max-w-3xl">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold font-800 leading-tight tracking-tight mb-6">
+                    <span class="text-white">Searchlight NV</span>
+                    <br>
+                    <span class="gradient-text">AI Lead Routing System</span>
+                    <br>
+                    <span class="text-white">For Growth</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-300 leading-relaxed mb-8 max-w-2xl">
+                    Automate Searchlight's lead flow with intelligent AI technology. Transform how you manage and distribute leads to maximize conversion rates and accelerate business growth.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="https://dandowneyseo.com" target="_blank" class="btn-primary text-center">
+                        <i class="fas fa-arrow-right mr-2"></i>Get Started Today
+                    </a>
+                    <button class="btn-secondary text-center">
+                        <i class="fas fa-play mr-2"></i>Learn More
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 md:py-32 bg-gray-900/50 relative">
+        <div class="max-w-7xl mx-auto px-6 md:px-12">
+            <div class="text-center mb-16 md:mb-24">
+                <h2 class="section-title">AI Lead Routing Engine</h2>
+                <p class="section-subtitle max-w-2xl mx-auto">
+                    Powered by advanced artificial intelligence to intelligently distribute leads to the right team members at the right time
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
+                <!-- Feature 1 -->
+                <div class="feature-card">
+                    <div class="w-14 h-14 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Intelligent Routing</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Our AI algorithm analyzes lead characteristics and team member expertise to ensure optimal matching. Every lead is routed to the team member most likely to convert it into a paying client.
+                    </p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feature-card">
+                    <div class="w-14 h-14 bg-gradient-to-br from-green-400 to-green-500 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Real-Time Processing</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Leads are processed and distributed in real-time, ensuring your team can respond immediately. No delays, no missed opportunities. Instant routing means faster response times and higher conversion rates.
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-card">
+                    <div class="w-14 h-14 bg-gradient-to-br from-indigo-500 to-green-400 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Advanced Analytics</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Track every lead through the funnel with comprehensive analytics. Understand conversion rates, team performance, and ROI. Data-driven insights help you continuously optimize your lead management process.
+                    </p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="feature-card">
+                    <div class="w-14 h-14 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Secure & Reliable</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Enterprise-grade security ensures your lead data is protected. With 99.9% uptime guarantee, your lead routing never stops. Compliance with industry standards keeps your business protected.
+                    </p>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="feature-card">
+                    <div class="w-14 h-14 bg-gradient-to-br from-green-400 to-green-500 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Easy Integration</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Seamlessly integrates with your existing CRM and business tools. API-first architecture allows for custom integrations. Get up and running in minutes, not weeks.
+                    </p>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="feature-card">
+                    <div class="w-14 h-14 bg-gradient-to-br from-indigo-500 to-green-400 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Cost Effective</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Eliminate expensive ad spend and manual lead distribution. Our AI system maximizes ROI by ensuring leads reach the most qualified team members. Pay only for what you use.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-20 md:py-32 relative">
+        <div class="max-w-7xl mx-auto px-6 md:px-12">
+            <div class="text-center mb-16 md:mb-24">
+                <h2 class="section-title">Transform Your Business</h2>
+                <p class="section-subtitle max-w-2xl mx-auto">
+                    Discover how Searchlight's AI lead routing system delivers measurable results for local businesses
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
+                <!-- Benefit 1 -->
+                <div class="flex gap-6">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-xl bg-gradient-to-br from-indigo-500 to-indigo-600">
+                            <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-white mb-2">More Client Opportunities Without Ads</h3>
+                        <p class="text-gray-300 leading-relaxed">
+                            Stop wasting money on advertising campaigns. Our AI lead routing system generates qualified leads through intelligent distribution of existing opportunities. Get more clients by working smarter, not spending more.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Benefit 2 -->
+                <div class="flex gap-6">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-xl bg-gradient-to-br from-green-400 to-green-500">
+                            <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-white mb-2">Increase Conversion Rates</h3>
+                        <p class="text-gray-300 leading-relaxed">
+                            When leads are matched with the right team members, conversion rates skyrocket. Our AI analyzes hundreds of data points to ensure optimal lead-to-agent matching, resulting in higher close rates and more revenue.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Benefit 3 -->
+                <div class="flex gap-6">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-xl bg-gradient-to-br from-indigo-500 to-green-400">
+                            <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-white mb-2">Save Time & Resources</h3>
+                        <p class="text-gray-300 leading-relaxed">
+                            Eliminate manual lead distribution and follow-up processes. Automation reduces administrative overhead, freeing your team to focus on closing deals. Save hours every day with intelligent routing.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Benefit 4 -->
+                <div class="flex gap-6">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-xl bg-gradient-to-br from-indigo-500 to-indigo-600">
+                            <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-white mb-2">Scalable Growth</h3>
+                        <p class="text-gray-300 leading-relaxed">
+                            As your business grows, our system grows with you. Handle 10x more leads without adding overhead. Our AI automatically scales to manage increased volume while maintaining quality and conversion rates.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Benefit 5 -->
+                <div class="flex gap-6">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-xl bg-gradient-to-br from-green-400 to-green-500">
+                            <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-white mb-2">Data-Driven Decisions</h3>
+                        <p class="text-gray-300 leading-relaxed">
+                            Access comprehensive analytics and performance metrics. Understand which strategies work best, identify bottlenecks, and continuously optimize. Make informed decisions based on real data, not guesswork.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Benefit 6 -->
+                <div class="flex gap-6">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-xl bg-gradient-to-br from-indigo-500 to-green-400">
+                            <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-white mb-2">Competitive Advantage</h3>
+                        <p class="text-gray-300 leading-relaxed">
+                            Stay ahead of the competition with cutting-edge AI technology. Respond to leads faster, convert more efficiently, and build stronger customer relationships. Gain the edge that drives sustainable business growth.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 md:py-32 bg-gray-900/50 relative">
+        <div class="max-w-7xl mx-auto px-6 md:px-12">
+            <div class="text-center mb-16 md:mb-24">
+                <h2 class="section-title">Trusted by Local Businesses</h2>
+                <p class="section-subtitle max-w-2xl mx-auto">
+                    See how Searchlight's AI lead routing system is transforming businesses and driving real results
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 md:gap-12">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <div class="flex gap-1 mb-4">
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                    </div>
+                    <p class="text-gray-200 leading-relaxed mb-6">
+                        "Searchlight's AI lead routing system has completely transformed how we manage our sales pipeline. Within the first month, we saw a 40% increase in conversion rates. The system intelligently matches leads to our team members based on their expertise and track record. We're now closing more deals without spending more on advertising. This is exactly what we needed to scale our business."
+                    </p>
+                    <div>
+                        <p class="font-bold text-white">Sarah Mitchell</p>
+                        <p class="text-gray-400 text-sm">Sales Director, Real Estate Solutions Inc.</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <div class="flex gap-1 mb-4">
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                    </div>
+                    <p class="text-gray-200 leading-relaxed mb-6">
+                        "We were spending a fortune on ad campaigns with inconsistent results. Searchlight changed everything. The AI automatically routes leads to the team member most likely to close them. Our response time dropped from hours to minutes. We've cut our customer acquisition cost in half while actually getting more qualified leads. Best investment we've made."
+                    </p>
+                    <div>
+                        <p class="font-bold text-white">Marcus Johnson</p>
+                        <p class="text-gray-400 text-sm">Founder, Digital Marketing Agency</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <div class="flex gap-1 mb-4">
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                    </div>
+                    <p class="text-gray-200 leading-relaxed mb-6">
+                        "The implementation was seamless. Within days, we had the system up and running. The real-time analytics dashboard gives us insights we never had before. We can see exactly which team members are performing best with different lead types. It's helped us optimize our entire sales process. The ROI has been incredible."
+                    </p>
+                    <div>
+                        <p class="font-bold text-white">Emily Chen</p>
+                        <p class="text-gray-400 text-sm">Operations Manager, Home Services Co.</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="testimonial-card">
+                    <div class="flex gap-1 mb-4">
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                    </div>
+                    <p class="text-gray-200 leading-relaxed mb-6">
+                        "What impressed me most is how the AI learns and improves over time. The system continuously optimizes lead routing based on performance data. Our team feels empowered knowing they're getting leads that match their strengths. We've gone from struggling with lead quality to having more high-quality opportunities than we can handle. Highly recommend."
+                    </p>
+                    <div>
+                        <p class="font-bold text-white">James Rodriguez</p>
+                        <p class="text-gray-400 text-sm">CEO, Financial Services Group</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20 md:py-32 relative">
+        <div class="max-w-4xl mx-auto px-6 md:px-12">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="section-title">About Searchlight</h2>
+            </div>
+
+            <div class="space-y-8">
+                <p class="text-lg text-gray-300 leading-relaxed">
+                    Searchlight was founded in 2020 by a team of AI engineers and business professionals who recognized a critical gap in how local businesses manage their leads. We saw talented sales teams losing opportunities due to poor lead distribution, and businesses wasting millions on ineffective advertising. Our mission became clear: build an intelligent system that could transform how leads are routed and managed. We started with a simple vision—use cutting-edge artificial intelligence to match leads with the right team members, at the right time, every single time. Today, Searchlight powers lead routing for hundreds of local businesses across multiple industries.
+                </p>
+                <p class="text-lg text-gray-300 leading-relaxed">
+                    Our core mission is to democratize access to enterprise-level AI technology for businesses of all sizes. We believe that intelligent automation shouldn't be reserved for large corporations with massive budgets. Every local business deserves the competitive advantage that comes from smart lead routing. We're committed to continuous innovation, customer success, and building a platform that grows with our clients. At Searchlight, we don't just provide software—we partner with you to drive measurable business growth through the power of artificial intelligence and data-driven decision making.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 md:py-32 bg-gray-900/50 relative">
+        <div class="max-w-3xl mx-auto px-6 md:px-12">
+            <div class="text-center mb-16 md:mb-24">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Everything you need to know about Searchlight's AI lead routing system</p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ 1 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="text-lg font-semibold text-white">How does the AI lead routing system work?</span>
+                        <svg class="faq-icon w-6 h-6 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer hidden">
+                        <p>Our AI lead routing system uses machine learning algorithms to analyze multiple data points including lead characteristics, team member expertise, historical conversion rates, availability, and performance metrics. When a new lead comes in, the system evaluates all available team members and routes the lead to the person most likely to successfully convert it. The system continuously learns from outcomes, improving its routing decisions over time to maximize your conversion rates and revenue.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="text-lg font-semibold text-white">Can Searchlight integrate with our existing CRM and tools?</span>
+                        <svg class="faq-icon w-6 h-6 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer hidden">
+                        <p>Yes! Searchlight is built with integration in mind. We offer pre-built integrations with popular CRM platforms like Salesforce, HubSpot, Pipedrive, and many others. Our API-first architecture also allows for custom integrations with virtually any business tool you're currently using. Our technical team can work with you to ensure a seamless integration process. Most implementations are up and running within 24-48 hours.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="text-lg font-semibold text-white">What kind of ROI can we expect from using Searchlight?</span>
+                        <svg class="faq-icon w-6 h-6 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer hidden">
+                        <p>Our customers typically see a 30-50% increase in conversion rates within the first 90 days. Many report reducing their customer acquisition cost by 40-60% while simultaneously increasing lead quality. The exact ROI depends on your industry, current processes, and team size. We've seen businesses save $50,000-$500,000+ annually by eliminating ad waste and improving conversion efficiency. Most of our clients see positive ROI within the first month of implementation.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="text-lg font-semibold text-white">How is my lead data secured and protected?</span>
+                        <svg class="faq-icon w-6 h-6 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer hidden">
+                        <p>Security is our top priority. Searchlight uses enterprise-grade encryption for all data in transit and at rest. We comply with GDPR, CCPA, and other major data protection regulations. Our infrastructure is hosted on secure, redundant servers with automatic backups. We conduct regular security audits and penetration testing. Your data is never shared with third parties without explicit consent. We maintain SOC 2 Type II certification and provide detailed security documentation upon request.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 5 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="text-lg font-semibold text-white">What support and training do you provide?</span>
+                        <svg class="faq-icon w-6 h-6 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer hidden">
+                        <p>We provide comprehensive onboarding and training for all customers. This includes system setup, team training, and optimization consultation. You'll have access to our dedicated support team via email, chat, and phone. We also provide detailed documentation, video tutorials, and best practice guides. Our success team works with you to ensure you're getting maximum value from Searchlight. Premium support packages include priority response times and quarterly business reviews.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section py-20 md:py-32 relative" style="background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=600&fit=crop');">
+        <div class="max-w-4xl mx-auto px-6 md:px-12 text-center relative z-10">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+                Ready to Transform Your Lead Management?
+            </h2>
+            <p class="text-xl text-gray-100 mb-10 leading-relaxed max-w-2xl mx-auto">
+                Join hundreds of local businesses using Searchlight's AI lead routing system to close more deals, reduce costs, and scale faster. Start your free trial today.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://dandowneyseo.com" target="_blank" class="btn-primary text-center">
+                    <i class="fas fa-rocket mr-2"></i>Start Your Free Trial
+                </a>
+                <button class="btn-secondary text-center">
+                    <i class="fas fa-calendar mr-2"></i>Schedule a Demo
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-indigo-500/10 py-16 md:py-20">
+        <div class="max-w-7xl mx-auto px-6 md:px-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-16 mb-12">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-br from-indigo-500 to-green-400 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-rocket text-white font-bold text-lg"></i>
+                        </div>
+                        <span class="text-lg font-bold text-white">Searchlight</span>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Intelligent AI lead routing system designed to help local businesses grow faster and smarter.
+                    </p>
+                </div>
+
+                <!-- Product -->
+                <div>
+                    <h4 class="font-bold text-white mb-4">Product</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#features" class="text-gray-400 hover:text-indigo-400 transition-colors text-sm">Features</a></li>
+                        <li><a href="#benefits" class="text-gray-400 hover:text-indigo-400 transition-colors text-sm">Benefits</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-indigo-400 transition-colors text-sm">Testimonials</a></li>
+                        <li><a href="#faq" class="text-gray-400 hover:text-indigo-400 transition-colors text-sm">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div>
+                    <h4 class="font-bold text-white mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="text-gray-400 hover:text-indigo-400 transition-colors text-sm">About Us</a></li>
+                        <li><a href="https://dandowneyseo.com" target="_blank" class="text-gray-400 hover:text-indigo-400 transition-colors text-sm">Contact</a></li>
+                        <li><a href="https://dandowneyseo.com" target="_blank" class="text-gray-400 hover:text-indigo-400 transition-colors text-sm">Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="font-bold text-white mb-4">Get In Touch</h4>
+                    <p class="text-gray-400 text-sm mb-4">
+                        <a href="mailto:dandowneyseo@gmail.com" class="hover:text-indigo-400 transition-colors">dandowneyseo@gmail.com</a>
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 bg-indigo-500/10 hover:bg-indigo-500/20 rounded-lg flex items-center justify-center transition-colors">
+                            <i class="fab fa-facebook text-indigo-400"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-indigo-500/10 hover:bg-indigo-500/20 rounded-lg flex items-center justify-center transition-colors">
+                            <i class="fab fa-twitter text-indigo-400"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-indigo-500/10 hover:bg-indigo-500/20 rounded-lg flex items-center justify-center transition-colors">
+                            <i class="fab fa-linkedin text-indigo-400"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="border-t border-gray-800 pt-8">
+                <p class="text-center text-gray-400 text-sm">
+                    &copy; 2025 Searchlight NV. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.querySelector('.mobile-menu-button');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+
+            // FAQ Accordion Toggle
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                if (question) {
+                    question.addEventListener('click', () => {
+                        const answer = item.querySelector('.faq-answer');
+                        const isOpen = !answer.classList.contains('hidden');
+                        
+                        // Close all other FAQ items
+                        faqItems.forEach(otherItem => {
+                            if (otherItem !== item) {
+                                otherItem.querySelector('.faq-answer')?.classList.add('hidden');
+                                otherItem.querySelector('.faq-icon')?.classList.remove('rotate-180');
+                            }
+                        });
+                        
+                        // Toggle current item
+                        answer?.classList.toggle('hidden');
+                        item.querySelector('.faq-icon')?.classList.toggle('rotate-180');
+                    });
+                }
+            });
+
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
